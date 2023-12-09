@@ -1,0 +1,91 @@
+/* ---------------------importing font------------------------ */
+@font-face {
+    font-family: "yekan";
+
+    src: url("../font/Yekan/Yekan.eot");
+
+    src: url("../font/Yekan/Yekan.eot?#iefix") format("embedded-opentype"),
+        url("../font/Yekan/Yekan.woff") format("woff"),
+        url("../font/Yekan/Yekan.ttf") format("truetype"),
+        url("../font/Yekan/Yekan.svg#BYekan") format("svg");
+
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+/* ---------------------colors------------------------ */
+:root {
+    --base: #ffffff;
+    --primary: #071555;
+    --secondary: #2361c6;
+    --tertiary: #2e3192;
+    --light: #f2f2f2;
+    --green: #47512c;
+    --black: #000000;
+    --dark: #2f2f2f;
+    --black-low: #0000002e;
+    --gray: #979797;
+}
+
+/*----------------------------- tags design --------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+    color: var(--black);
+    font-family: "yekan";
+    outline: none;
+    transition: 0.3s;
+}
+
+body {
+    background-color: var(--base);
+}
+
+container {
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+card {
+    position: relative;
+    /* width: 1000px; */
+    display: flex;
+}
+
+header,
+footer,
+section,
+nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--light);
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
